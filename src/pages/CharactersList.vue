@@ -72,7 +72,6 @@ const loading = computed(() => store.loading)
   background-color: #0D0D0D;
 }
 
-// Overlay cobrindo tudo
 .full-screen-overlay {
   position: absolute;
   top: 0; left: 0;
