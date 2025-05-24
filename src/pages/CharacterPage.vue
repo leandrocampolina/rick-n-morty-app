@@ -18,14 +18,12 @@
                 <span class="text-hover-item">{{ char.status }}</span>
               </q-item-section>
             </q-item>
-
             <q-item>
               <q-item-section avatar class="hover-container">
                 <q-icon class="avatar-icon icon-hover-item" color="primary" name="groups" />
                 <span class="text-hover-item">{{ char.species }}</span>
               </q-item-section>
             </q-item>
-
             <q-item>
               <q-item-section avatar class="hover-container">
                 <q-icon
