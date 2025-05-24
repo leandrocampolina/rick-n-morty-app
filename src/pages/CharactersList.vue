@@ -1,17 +1,17 @@
 <template>
   <q-page padding class="page-with-spinner">
+    <q-input
+      v-model="name"
+      label="Search by name"
+      label-color="white"
+      debounce="300"
+      @keyup.enter="load()"
+      input-class="text-white"
+    />
     <div v-if="loading" class="full-screen-overlay flex flex-center">
       <q-spinner color="white" size="4em" />
     </div>
     <div v-else>
-      <q-input
-        v-model="name"
-        label="Search by name"
-        label-color="white"
-        debounce="300"
-        @keyup.enter="load()"
-        input-class="text-white"
-      />
       <div class="q-gutter-md q-mt-md card-list-box">
         <q-card
           v-for="char in list"
